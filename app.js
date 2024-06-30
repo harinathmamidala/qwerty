@@ -212,16 +212,15 @@ const perform = async()=>{
   }
 }
 
-// setInterval(()=>{
-//   fetch('https://qwerty-eg0m.onrender.com')
-//   var currentdate = new Date(); 
-//   let H = currentdate.getHours();
-//   let M = currentdate.getMinutes();
-//   if( H == 13 &&  30 <= M && M < 40){
-//     perform()
-//   }
-// },600000)
-perform()
+setInterval(()=>{
+  fetch('https://qwerty-eg0m.onrender.com')
+  var currentdate = new Date(); 
+  let H = currentdate.getHours();
+  let M = currentdate.getMinutes();
+  if( H == 13 &&  30 <= M && M < 40){
+    perform()
+  }
+},600000)
 
 
 
