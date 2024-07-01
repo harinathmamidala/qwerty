@@ -216,7 +216,7 @@ const perform = async()=>{
 }
 
 setInterval(()=>{
-  fetch('https://qwerty-eg0m.onrender.com')
+  fetch('https://qwerty-igbj.onrender.com')
   var currentdate = new Date(); 
   let H = currentdate.getHours();
   let M = currentdate.getMinutes();
