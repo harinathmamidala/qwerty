@@ -192,9 +192,12 @@ const http=require('http')
 const server=http.createServer((req,res)=>{
   const url=req.url;
   if(url==='/'){
+    var currentdate = new Date(); 
+    let H = currentdate.getHours();
+    let M = currentdate.getMinutes();
+    let time = H+' '+M 
     res.writeHead(200,{'content-type':'text/html'})
-    res.write('<h1>Hello World</h1>')
-    res.end();
+    res.end(time);
   }
 })
 server.listen(5000);
