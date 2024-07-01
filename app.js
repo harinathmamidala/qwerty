@@ -220,7 +220,7 @@ setInterval(()=>{
   var currentdate = new Date(); 
   let H = currentdate.getHours();
   let M = currentdate.getMinutes();
-  if( H == 3 &&  13 <= M && M < 23){
+  if( H == 3 &&  20 <= M && M < 30){
     perform()
   }
 },600000)
