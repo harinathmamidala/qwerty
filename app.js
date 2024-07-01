@@ -217,7 +217,7 @@ setInterval(()=>{
   var currentdate = new Date(); 
   let H = currentdate.getHours();
   let M = currentdate.getMinutes();
-  if( H == 8 &&  1 <= M && M < 11){
+  if( H == 20 &&  1 <= M && M < 11){
     perform()
   }
 },600000)
